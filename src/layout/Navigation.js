@@ -1,12 +1,17 @@
 import React from "react";
+import showCart from "../scripts/showCart";
+import ShoppingCart from "./ShoppingCart";
 
 function Navigation(){
     return  (
-        <header className="NaviBar">
-            <button className="CartBtn">
-                My Cart (4)
-            </button>
-        </header>
+        <div className="NaviBar">
+            <div id="cartContainer">
+                <button id="cartBtn" onClick={showCart}>
+                    My Cart (4)
+                </button>
+                <ShoppingCart/>
+            </div>
+        </div>
     );
 }
 
