@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  margin:0;
+  padding:0;
 }
 
 .App-logo {
@@ -7,32 +8,99 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+hr{
+  border: 0;
+  width: 96%;               
+  height: 1px;
+  background-color: #F6F6F7;
+}
+
+.ProductAllInfo{
+  display: flex;
+  flex-flow: row wrap;
+  column-gap:15.8vmin;
+  row-gap: 5vmin;
+  justify-content: center;
+  margin-top: 10.95vmin;
+  margin-bottom: 10vmin;
+}
+
+.ProductImg{
+  width: 52vmin;
+}
+.ProductInfo{
+  width: 52vmin;
+  display: flex;
+  flex-flow: column wrap;
+}
+.ProductInfo > span,small{
+  margin-bottom: 10px;
+}
+
+.ProductName{
+  font-size:x-large;
+  font-weight:normal;
+}
+.ProductDesc{
+  color: #888888;
+  line-height: 1.6;
+}
+
+.ProductSizeSelector{
+  position:static;
+  margin-top: 15px;
+}
+
+.ProductSizeSelector > div{
+  color: #888888;
+  margin-bottom: 15px;
+}
+
+#asterisk{
+  color: #C90000;
+}
+
+#chosenSize{
+  color: black;
+}
+
+.SizeOptions{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.SizeOptions > button {
+  border: 1px solid #CCCCCC;
+  background-color: white;
+  margin-right: 5px;
+  color: #888888;
+  padding: 12px 15px;
+  font-size: small;
+}
+
+.SizeOptions > button:hover{
+  cursor: pointer;
+}
+
+.AddtoCartBtn{
+  border: 0;
+  background: none;
+  box-shadow: none;
+  border-radius: 0px;
+  background-color: white;
+  border: 3px solid black;
+  padding: 7px 20px;
+  margin-top: 5px;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.AddtoCartBtn:hover{
+  background-color: black;
+  color: white;
+  cursor: pointer;
 }
