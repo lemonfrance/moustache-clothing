@@ -3,15 +3,6 @@
   padding:0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 hr{
   border: 0;
   width: 96%;               
@@ -27,6 +18,44 @@ hr{
   justify-content: center;
   margin-top: 10.95vmin;
   margin-bottom: 10vmin;
+}
+
+.NaviBar {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #F6F6F7;
+  height: 30px;
+  width: 100vw;
+  margin-top: 2.3vh;
+}
+
+#cartContainer{
+  display: flex;
+  position: static;
+  flex-flow: column wrap;
+  right: 5px;
+  width: 340px;
+  height: auto;
+  margin-left: 68vw;
+  clear: both;
+}
+
+#cartBtn{
+  display:block;
+  border: 0;
+  background: none;
+  box-shadow: none;
+  color:#888888;
+  border-radius: 0px;
+  padding: 7px 10px;
+  width: fit-content;
+  height: 30px;
+  margin-left: auto;
+  z-index: 1;
+}
+
+#cartBtn:hover{
+  cursor:pointer;
 }
 
 .ProductImg{
@@ -103,4 +132,41 @@ hr{
   background-color: black;
   color: white;
   cursor: pointer;
+}
+
+#shopCart{
+  display: none;
+  flex-flow: column wrap;
+  width: 90%;
+  height: auto;
+  margin-top: -1px;
+  padding: 6%;
+  row-gap: 25px;
+  background-color: white;
+  border: 1px solid #CCCCCC;
+}
+
+#shopCart > div {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 5%;
+  width: 100%;
+  height: auto;
+}
+
+#shopCart > div > img,.CartItemInfo{
+  display: flex;
+  flex-flow: column wrap;
+}
+
+#shopCart > div > img{
+  width: auto;
+  height: 120px;
+}
+
+#shopCart > div > .CartItemInfo{
+  width: 60%;
+  height: auto;
+  padding: 0 5%;
+  gap: 10px;
 }
