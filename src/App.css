@@ -16,7 +16,7 @@ hr{
   column-gap:15.8vmin;
   row-gap: 5vmin;
   justify-content: center;
-  margin-top: 10.95vmin;
+  margin-top: 4.95vmin;
   margin-bottom: 10vmin;
 }
 
@@ -24,7 +24,7 @@ hr{
   display: flex;
   flex-flow: row wrap;
   background-color: #F6F6F7;
-  height: 30px;
+  height: 35px;
   width: 100vw;
   margin-top: 2.3vh;
 }
@@ -38,6 +38,7 @@ hr{
   height: auto;
   margin-left: 68vw;
   clear: both;
+  z-index: 1;
 }
 
 #cartBtn{
