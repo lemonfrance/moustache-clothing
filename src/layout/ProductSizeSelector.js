@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import addToCart from "../scripts/addToCart";
 
 class ProductSizeSelector extends Component{
     render(){
@@ -13,11 +14,11 @@ class ProductSizeSelector extends Component{
                     </b></small>
                 </div>
                 <div className="SizeOptions">
-                    <button>S</button>
-                    <button>M</button>
-                    <button>L</button>
+                    <button onClick={() => document.getElementById("chosenSize").innerHTML="S"}>S</button>
+                    <button onClick={() => document.getElementById("chosenSize").innerHTML="M"}>M</button>
+                    <button onClick={() => document.getElementById("chosenSize").innerHTML="L"}>L</button>
                 </div>
-                <button className="AddtoCartBtn">ADD TO CART</button>
+                <button className="AddtoCartBtn" onClick={addToCart}>ADD TO CART</button>
             </div>
         );
     }
