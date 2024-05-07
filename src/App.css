@@ -73,7 +73,6 @@
 #shopCart > div > img,.CartItemInfo{
   display: flex;
   flex-flow: column wrap;
-  border: 1px solid green;
 }
 
 #shopCart > div > img{
